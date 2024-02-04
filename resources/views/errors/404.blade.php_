@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @include('parts.head')
+    <body class="grey">
+        <div class="page-wrap">
+            <div class="container-fluid custom-center_padding">
+                <div class="row">
+                    <div class="col-lg-12">
+                        @include('parts.header')
+                    </div>
+                </div>
+            </div>
+
+           <div class="content">
+                <!-- <div class="title">Страница не найдена</div> -->
+                <h1>Данная страница не существует!</h1>
+                <p>Вы можете <a href="/">перейти на главную страницу сайта</a></p>
+            </div>
+        </div>
+
+        @include('parts.footer')
+        @include('parts.js')
+    </body>
+</html>
+

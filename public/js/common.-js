@@ -1,0 +1,481 @@
+$(document).ready(function() {
+
+$('.footer-tel a.bigblack-text').click(function(){
+    void(gtag('config', 'UA-125337794-1', {'page_path': '/telefon'}));
+    void(yaCounter7649464.reachGoal('telefon')); 
+    return true;
+});
+
+$('.contact-content_mail a').click(function(){
+    void(gtag('config', 'UA-125337794-1', {'page_path': '/napisat'}));
+    void(yaCounter7649464.reachGoal('napisat')); 
+    return true;
+});
+
+$('form.send_form button#submitBtn_appointment-btn').click(function(){
+    void(gtag('config', 'UA-125337794-1', {'page_path': '/otpravka'}));
+    void(yaCounter7649464.reachGoal('otpravka')); 
+    return true;
+});
+
+$('form.send_form button#submitBtn_pain').click(function(){
+    void(gtag('config', 'UA-125337794-1', {'page_path': '/forma_zapisi'}));
+    void(yaCounter7649464.reachGoal('forma_zapisi')); 
+    return true;
+});
+
+
+    // RANDOM COLOR
+
+    // // HAMBURGER
+    $('.c-hamburger').on('click', function(e) {
+        e.preventDefault();
+        $('.menu').toggleClass('open-menu');
+        $('body').toggleClass('noscroll');
+        if($(this).hasClass('is-active')) {
+            $(this).removeClass('is-active')
+        } else {
+            $(this).addClass('is-active')
+        }
+    });
+
+    $('.filter-block_service a').click(function() {
+        $('.filter-block_service a').removeClass('active-tab');
+        $(this).addClass('active-tab');
+    });
+
+
+    // END HAMBURGER
+
+
+//    Carousel
+    var $owl = $('.banner-carousel');
+
+    $owl.owlCarousel({
+        loop: true,
+        nav: false,
+        items: 1,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        animateOut: 'fadeOut',
+        lazyLoad: true
+    });
+
+    $owl.on('change.owl.carousel', function( event ) {
+        $('.slide-text h1').addClass('animated fadeInRight');
+    });
+
+    var count_items = $('.sert-carousel .item').length;
+    $('.sert-carousel').owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        items: 4,
+        dots: false,
+        itemsScaleUp: false,
+        lazyLoad: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            768: {
+                items:  count_items >= 2 ? 2 : count_items,
+            },
+           1280: {
+               items:  count_items >= 3 ? 3 : count_items,
+            },
+            1400: {
+                items:  count_items >= 4 ? 4 : count_items,
+            }
+        }
+    });
+
+    $('.work-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        items: 1,
+        dots: false,
+        lazyLoad: true
+    });
+
+
+    $('.doctors-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        items: 2,
+        dots: false,
+        autoplay: true,
+        lazyLoad: true,
+        autoplayTimeout: 2500,
+        autoplaySpeed: 2000,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            1200: {
+                items: 2,
+            }
+        }
+    });
+
+    var count_items_doctor = $('.doctors-carousel_service .item').length;
+    $('.doctors-carousel_service').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        items: 2,
+        dots: false,
+        lazyLoad: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            1200: {
+                items:  count_items_doctor >= 2 ? 2 : count_items_doctor,
+            }
+        }
+    });
+
+    $('.news-carousel').owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: true,
+        items: 2,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 3500,
+        autoplaySpeed: 2000,
+        lazyLoad: true
+    });
+
+    $('.review-carousel').owlCarousel({
+        items: 3,
+        nav: true,
+        loop: true,
+        margin: 0,
+        video: true,
+        center: true,
+        dots: false,
+        autoplay: true,
+        lazyLoad: true
+    });
+
+    $('.main-carousel').owlCarousel({
+        items: 1,
+        nav: true,
+        loop: true,
+        center: true,
+        lazyLoad: true
+    });
+    $('.service-item_review-carousel').owlCarousel({
+        items: 3,
+        nav: true,
+        loop: true,
+        center: true,
+        merge: false,
+        margin:50,
+        dots: false,
+        lazyLoad: true
+    });
+
+    $('.before_after-carousel').owlCarousel({
+        items: 1,
+        nav: true,
+        loop: true,
+        center: true,
+        lazyLoad: true
+    });
+
+    $('.license-carousel').owlCarousel({
+        items: 3,
+        nav: true,
+        loop: true,
+        center: true,
+        margin: 20
+    });
+
+
+
+    $('a[data-rel^=lightcase]').lightcase({
+        swipe: true
+    });
+
+    $('.main-menu_vine-ico').click(function(e){
+        e.preventDefault();
+        $(".gallery-vine-ico a").first().click();
+    });
+
+    $(".doctors-block_collapse > a").click(function(){
+        $(this).next().slideToggle('slow');
+        $(this).toggleClass('active');
+        return false;
+    });
+    $(".service-block_collapse > a").click(function(){
+        $(this).next().slideToggle('slow');
+        $(this).toggleClass('active');
+        return false;
+    });
+    $(".tech-block_collapse > a").click(function(){
+        $(this).next().slideToggle('slow');
+        $(this).toggleClass('active');
+        return false;
+    });
+    $('.service_select').on('click', function(e) {
+        $('.service_select + ul').slideToggle('slow');
+        return false;
+    });
+
+    $('.dropdown a').click(function() {
+        var $this = $(this);
+        $this.toggleClass('active');
+        if ($this.next().hasClass('active')) {
+            $this.next().removeClass('active');
+            $this.next().slideUp(350);
+        } else {
+            $this.parent().parent().find('.dropdown-content').removeClass('active');
+            $this.parent().parent().find('.dropdown-content').slideUp(350);
+            $this.next().toggleClass('active');
+            $this.next().slideToggle(350);
+        }
+    });
+
+    //    форма обратной связи
+
+    $('.send_form').submit(function(event) {
+        var forma = $(this);
+        forma.show();
+        var button = $('button[form = "'+forma.attr('id')+'"]');
+        var button_ok = $('button[data-form = "'+forma.attr('id')+'"]');
+        var capt_img = forma.find('span.reload');
+        var capt = forma.find('input[name=captcha]');
+        forma.find('.error, error-check ').removeClass('error error-check');
+        $.ajax({
+            type: "POST",
+            url: forma.attr('action'),
+            data: forma.serialize(),
+            success: function(response) {
+                capt_img.trigger('click');
+                $( ".visit-doctor").hide();
+                $( ".visit-doctor-sucess" ).show();
+
+                $( "#recommendation").hide();
+                $( "#submitBtn_recommendation").hide();
+                $( ".backrec" ).show();
+                $( ".btn-send_close" ).show();
+
+                $( ".appointment").hide();
+                $( ".appointment-sucess" ).show();
+
+                $( "#director").hide();
+                $( "#reg-treatment-block_wrap").hide();
+                $( "#reg-treatment-block_service-wrap").hide();
+
+                $( "#callback-wrap").hide();
+
+                $( ".thankyou" ).show();
+
+            },
+            error: function(response) {
+                    if(response.responseJSON){
+                    $.each(response.responseJSON,function(name){
+                        var row = forma.find("input[name='"+name+"'], textarea[name='"+name+"']").parents('.input-group').eq(0);
+                        row.addClass('error');
+                    });
+                }
+                capt_img.trigger('click');
+            }
+        });
+        capt.val('');
+        return false;
+    });
+
+    $('#button-back').click(function(){
+        $( ".visit-doctor").show();
+        $( ".visit-doctor-sucess" ).hide();
+    });
+
+    $('#btn-send_close').click(function(){
+        $( "#recommendation").show();
+        $( "#submitBtn_recommendation").show();
+        $( ".backrec" ).hide();
+        $( ".btn-send_close" ).hide();
+    });
+
+    $('#button-back_appointment').click(function(){
+        $( ".appointment").show();
+        $( ".appointment-sucess" ).hide();
+    });
+
+    $('#button-back_thankyou').click(function(){
+        $( "#director").show();
+        $( "#reg-treatment-block_wrap").show();
+        $( "#reg-treatment-block_service-wrap").show();
+        $( "#callback-wrap").show();
+        $( "#review").show();
+        $( ".thankyou" ).hide();
+    });
+
+    $('#button-back_review').click(function(){
+        $( "#callback-wrap").show();
+        $( ".thankyou" ).hide();
+        $( "#submitBtn_recommendation").show();
+    });
+
+    $('#button-back_director').click(function(){
+        $( "#director").show();
+        $( ".thankyou" ).hide();
+    });
+
+
+    // Обновление captcha
+    $('body').on('click','span.reload',function(){
+        var img = $(this).find('img[alt=captcha]');
+        var src = img.attr('src');
+        var url = src.slice(0,src.indexOf('?'));
+        img.attr('src',url+'?'+ $.now());
+    });
+
+    var the_terms = $("#checkbox");
+
+    the_terms.click(function() {
+        if ($(this).is(":checked")) {
+            $("#submitBtn").removeAttr("disabled");
+        } else {
+            $("#submitBtn").attr("disabled", "disabled");
+        }
+    });
+
+    var the_terms = $("#checkbox_callback");
+
+    the_terms.click(function() {
+        if ($(this).is(":checked")) {
+            $("#submitBtn_callback").removeAttr("disabled");
+        } else {
+            $("#submitBtn_callback").attr("disabled", "disabled");
+        }
+    });
+
+    var the_terms = $("#checkbox_gift");
+
+    the_terms.click(function() {
+        if ($(this).is(":checked")) {
+            $("#submitBtn_gift").removeAttr("disabled");
+        } else {
+            $("#submitBtn_gift").attr("disabled", "disabled");
+        }
+    });
+
+    var the_terms = $("#checkbox_pain");
+
+    the_terms.click(function() {
+        if ($(this).is(":checked")) {
+            $("#submitBtn_pain").removeAttr("disabled");
+        } else {
+            $("#submitBtn_pain").attr("disabled", "disabled");
+        }
+    });
+
+    var the_terms = $("#checkbox_reg-treatment");
+
+    the_terms.click(function() {
+        if ($(this).is(":checked")) {
+            $("#submitBtn_gift_reg-treatment").removeAttr("disabled");
+        } else {
+            $("#submitBtn_gift_reg-treatment").attr("disabled", "disabled");
+        }
+    });
+
+    var the_terms = $("#checkbox_recommendation");
+
+    the_terms.click(function() {
+        if ($(this).is(":checked")) {
+            $("#submitBtn_recommendation").removeAttr("disabled");
+        } else {
+            $("#submitBtn_recommendation").attr("disabled", "disabled");
+        }
+    });
+
+    var the_terms = $("#checkbox_appointment-btn");
+
+    the_terms.click(function() {
+        if ($(this).is(":checked")) {
+            $("#submitBtn_appointment-btn").removeAttr("disabled");
+        } else {
+            $("#submitBtn_appointment-btn").attr("disabled", "disabled");
+        }
+    });
+
+    $(".question-item p").click(function () {
+        $header = $(this);
+        $content = $header.next();
+
+        $header.parent().toggleClass('active');
+        $header.toggleClass('active');
+        $content.slideToggle(500);
+    });
+
+    $('#service').on('change',function(){
+        var id_servise = $(this).find('option:selected').eq(0).attr('rel');
+        $('select#doctors option').show();
+        $('select#doctors option:selected').prop('selected',false);
+        $.each($('select#doctors option'),function(){
+            var arr = $(this).attr('rel').split(','); console.log(arr);
+                if($.inArray(id_servise,arr)==-1){
+                    $(this).hide();
+                }else{
+                    $(this).show();
+                }
+        });
+    });
+
+    function scaleCaptcha(elementWidth) {
+        var reCaptchaWidth = 304;
+        var containerWidth = $('.formWidth').width();
+
+        if(reCaptchaWidth > containerWidth) {
+            var captchaScale = containerWidth / reCaptchaWidth;
+            console.log(captchaScale);
+            $('.recapt').css({
+                'transform':'scale('+captchaScale+')'
+            });
+        }
+
+    }
+     scaleCaptcha();
+     $(window).resize($.throttle(100, scaleCaptcha));
+    // 13 april 2007 begin date
+    var year= new Date();
+    const beginDate = 2007*12;
+    var currentYear = year.getFullYear()*12;
+    var realYear = (currentYear - beginDate)/12;
+
+    var currentMonth = year.getMonth()+1;
+    if(currentMonth < 4) {
+        currentMonth = currentMonth + 12;
+    }
+    currentMonth = currentMonth - 4;
+    document.getElementById("date").innerHTML = realYear;
+
+    switch (currentMonth) {
+        case 1:
+            monthName = ' месяц '
+            break;
+        case 2:
+        case 3:
+        case 4:
+            monthName = ' месяцa '
+            break;
+        default:
+            monthName = ' месяцев '
+    }
+    if (currentMonth !=0 ) {
+        document.getElementById("month").innerHTML = ' и ' + currentMonth + monthName;
+    }
+
+
+
+
+});

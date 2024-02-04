@@ -1,0 +1,103 @@
+.asking-block_wrapper {
+    margin-left: auto;
+    margin-right: auto;
+}
+.asking-block {
+    width: 100%;
+    padding: 40px;
+    margin-bottom: 40px;
+    background-color: #f5f7fa;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0;
+    border-radius: 10px;
+}
+.asking-block h2 {
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 1.2;
+    text-align: center;
+}
+.asking-block_img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 220px;
+    height: 220px;
+    margin-right: 40px;
+}
+.asking-block_text {
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 300px);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    text-align: center;
+}
+.asking-block_text p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.asking-block_text .bold {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.asking-block_text a {
+    color: #333;
+}
+.asking-block a.btn {
+    background-color: white;
+    border: none !important;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 15px 0;
+    color: #e1005c;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    height: 37px;
+    line-height: 37px;
+    margin: 20px auto 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+    width: 205px;
+}
+
+.asking-block a.btn:hover {
+    background-color: #e1005c;
+    color: white;
+}
+
+@media only screen and (max-width : 767px) {
+    .asking-block {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+    }
+    .asking-block_wrapper {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .asking-block_img {
+        display: none;
+    }
+    .asking-block_text {
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }
+    .asking-block h2 {
+        font-size: 26px;
+    }
+    .recommendation-block img {
+        display: block;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 300px;
+        width: 100%;
+    }
+}

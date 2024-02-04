@@ -1,0 +1,429 @@
+.block-contact {
+    background-color: rgba(255, 255, 255, 1);
+}
+.block-contact_inner {
+    padding-left: 70px;
+    padding-right: 20px;
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+.block-contact > img {
+    width: 100%;
+}
+.contact-tel {
+    position: relative;
+    margin-bottom: 15px;
+}
+.contact-tel:before {
+    position: absolute;
+    content: '';
+    left: -50px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/phone-symbol.svg);
+    background-size: contain;
+}
+.contact-tel p {line-height: 1;}
+.contact-skype a {
+    font-family: 'Roboto', sans-serif; font-weight: normal;
+    font-size: 16px;
+    color: rgba(51, 51, 51, 1);
+    font-weight: 600;
+}
+.contact-skype {
+    position: relative;
+    margin-bottom: 15px;
+}
+.contact-skype p {line-height: 1;}
+.contact-skype:before {
+    position: absolute;
+    content: '';
+    left: -50px;
+    top: 4px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/skype-logo.svg);
+    background-size: contain;
+}
+.contact-mail {
+    position: relative;
+    margin-bottom: 15px;
+}
+.contact-mail p {line-height: 1;}
+.contact-mail:before {
+    position: absolute;
+    content: '';
+    left: -50px;
+    top: 6px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/email.svg);
+    background-size: contain;
+}
+.req-mail {
+    position: relative;
+    margin-bottom: 15px;
+}
+.req-mail:before {
+    position: absolute;
+    content: '';
+    left: -50px;
+    top: 4px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/icon.svg);
+    background-size: contain;
+}
+.contact-mail a {
+    font-family: 'Roboto', sans-serif; font-weight: normal;
+    font-size: 16px;
+    color: rgba(51, 51, 51, 1);
+    font-weight: 600;
+}
+.contact-content {
+    padding-left: 45px;
+    padding-right: 90px;
+    padding-top: 30px;
+    padding-bottom: 45px;
+    background-color: rgba(255, 255, 255, 1);
+}
+.contact-content ul.breadcrumb li a {
+    color: rgba(169, 170, 174, 0.6);
+}
+.contact-content ul.breadcrumb li + li::before {
+    color: rgba(169, 170, 174, 0.6);
+}
+.contact-content ul.breadcrumb li:last-child a {
+    color: rgba(153, 153, 153, 1);
+    pointer-events: none;
+}
+
+.contact-content h2{
+    font-family: 'Roboto', sans-serif; font-weight: 300;
+    font-size: 40px;
+    color: rgba(62, 62, 72, 1);
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.contact-content p {
+    font-family: 'Roboto', sans-serif; font-weight: 300;
+    font-size: 16px;
+}
+.contact-content a {
+    color: rgba(51,51,51,1);
+}
+.contact-content span {
+    font-weight: 900;
+}
+
+.address {
+    position: relative;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+.address:before {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    top: 0;
+    left: 0;
+    background-image: url('../img/placeholder.svg');
+    background-size: contain;
+}
+.schedule {
+    position: relative;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+.schedule:before {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    top: 0;
+    left: 0;
+    background-image: url('../img/clock_footer.svg');
+    background-size: contain;
+}
+
+.telephone {
+    position: relative;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+.telephone:before {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    top: 0;
+    left: 0;
+    background-image: url(../img/phone-symbol.svg);
+    background-size: contain;
+}
+.contact-content_mail {
+    position: relative;
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+.contact-content_mail:before {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    top: 0;
+    left: 0;
+    background-image: url(../img/email.svg);
+    background-size: contain;
+}
+.vk_groups_wrapper {
+float:right;
+}
+
+.contacts__head {
+    background: transparent url('/img_new/background-contacts.jpg') no-repeat scroll right center;
+    background-size: cover;
+    border-radius: 10px;
+    height: 165px;
+    padding: 20px 40px;
+    position: relative;
+    width: 100%;
+}
+
+.contacts__head > :not(.white-overlay) {
+    position: relative;
+    z-index: 2;
+}
+
+.contacts__head h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: 300 !important;
+    line-height: 1.2;
+}
+
+.contacts__head > div {
+    height: 32px;
+}
+
+.contacts__head > div > span {
+    background: transparent none no-repeat scroll left center;
+    background-size: 32px 32px;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 40px;
+}
+
+.contacts__head > div > span > b {
+    font-weight: bold;
+}
+
+.contacts__head > div > span:first-of-type {
+    background-image: url('/img_new/director.svg');
+}
+
+.contacts__head > div > span + span {
+    background-image: url('/img_new/phone.svg');
+    margin-left: 40px;
+}
+
+.contacts__body {
+    /**/
+}
+
+.contacts__clinic {
+    align-items: center;
+    background-color: #ebf0f7;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 0;
+    height: 277px;
+    justify-content: space-between;
+    margin: 40px auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+.contacts__clinic > div {
+    flex: 0 0 33%;
+    height: 277px;
+}
+
+.contacts__clinic-photo {
+    background: transparent none no-repeat scroll center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.contacts__clinic-map {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contacts__clinic-info {
+    padding: 20px 30px;
+}
+
+.contacts__clinic-info > div:not(.contacts__clinic-taxi) {
+    align-items: center;
+    background: transparent none no-repeat scroll left center;
+    background-size: 32px 32px;
+    color: #485363;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    justify-content: flex-start;
+    line-height: 32px;
+    margin-bottom: 10px;
+    min-height: 32px;
+    overflow: hidden;
+    padding-left: 40px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.contacts__clinic-taxi {
+    height: 37px !important;
+    margin-top: 40px;
+    overflow: visible !important;
+    padding-left: 0 !important;
+}
+
+.contacts__clinic-taxi div + div {
+    background-color: #ffcb2e;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    height: 37px;
+    min-width: 0;
+    overflow: hidden;
+    position: relative;
+    vertical-align: top;
+    width: 37px;
+}
+
+.contacts__clinic-taxi div + div * {
+    opacity: 0 !important;
+}
+
+.contacts__clinic-taxi div + div::before,
+.contacts__clinic-taxi div + div::after {
+    content: '';
+    height: 18.5px;
+    position: absolute;
+    top: 18.5px;
+    width: 18.5px;
+}
+
+.contacts__clinic-taxi div + div::before {
+    background-color: white;
+    left: 0;
+}
+
+.contacts__clinic-taxi div::after {
+    background-color: #424242;
+    right: 0;
+}
+
+.contacts__clinic-taxi div:first-of-type {
+    background-color: #e1005c;
+    border: none !important;
+    border-radius: 10px;
+    box-shadow: rgba(225, 0, 92, 0.5) 3px 3px 10px 0;
+    color: white;
+    display: inline-block;
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    height: 37px;
+    line-height: 37px;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+    vertical-align: top;
+    width: calc(100% - 60px);
+}
+
+.contacts__clinic-taxi div:first-of-type:hover {
+    background-color: white;
+    color: #e1005c;
+}
+
+@media only screen and (max-width : 1199px) {
+    .block-contact {
+        display: none;
+    }
+}
+
+@media only screen and (max-width : 1099px) {
+    .contacts__clinic {
+        flex-direction: column;
+        height: auto;
+    }
+    .contacts__clinic > div {
+        /*flex: 0 0 auto;*/
+        height: 250px;
+        text-overflow: clip;
+        white-space: normal;
+        width: 100%;
+    }
+    .contacts__clinic > div.contacts__clinic-info {
+        height: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width : 900px) {
+.vk_groups_wrapper {
+float:unset;
+}
+}
+@media only screen and (max-width : 809px) {
+    .contacts__head > div > span {
+        display: block;
+    }
+    .contacts__head > div > span + span {
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width : 559px) {
+    .contacts__clinic-info > div:not(.contacts__clinic-taxi) {
+        font-size: 14px;
+        line-height: 17px;
+        text-overflow: clip;
+        white-space: normal;
+    }
+}
+@media only screen and (max-width : 480px) {
+    .contact-content {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+    .contact-content h2 {
+        margin-left: 20px;
+        font-size: 28px;
+    }
+
+    .contact-content p {
+        margin-left: 20px;
+    }
+}
+@media only screen and (max-width : 479px) {
+    .contacts__head > div {
+        display: none;
+    }
+}

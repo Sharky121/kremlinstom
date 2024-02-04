@@ -1,0 +1,87 @@
+.service-list {
+    background-color: transparent;
+}
+.service-list [class^='col-'] {
+    display: inline-block;
+    vertical-align: top;
+    float: none;
+    margin-right: -3px;
+}
+.service-item {
+    padding: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    min-height: 420px;
+    box-shadow: 3px 3px 20px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.service-item:hover {
+    box-shadow: 3px 3px 20px rgba(0,0,0,0.2);
+}
+.service-item__image {
+    background: transparent url('/img_new/service01.jpg') no-repeat scroll center; /* TODO: temporary */
+    background-size: cover;
+    height: 185px;
+    width: 100%;
+}
+.service-list a:hover .service-item {
+    background-color:  rgba(255, 255, 255, 0.5);
+}
+.service-item img {
+    display: block;
+    margin:0 auto;
+    width: 130px;
+    height: 130px;
+    margin-bottom: 30px;
+}
+.service-item h3 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: bold;
+    color: #485363;
+    width: 100%;
+    border-bottom: solid 5px #e1005c;
+    height: 60px;
+    transition: color 0.3s ease-in-out;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+.service-item:hover h3 {
+    color: #e1005c;
+}
+.border-bottom_color--blue {border-bottom: 2px solid rgba(34, 190, 239, 1);}
+.border-bottom_color--green {border-bottom: 2px solid rgba(202, 216, 102, 1);}
+.border-bottom_color--orange {border-bottom: 2px solid rgba(246, 177, 82, 1);}
+.border-bottom_color--red {border-bottom: 2px solid rgba(231, 104, 131, 1);}
+.border-bottom_color--grey {border-bottom: 2px solid rgba(170, 171, 175, 1);}
+
+.service-item p {
+    font-family: 'Roboto', sans-serif;
+    color: #485363;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 300;
+    width: 100%;
+    margin:0 auto;
+    padding: 10px 20px;
+}
+
+@media only screen and (max-width : 1199px) {
+    .reg-treatment-block {display: none;}
+}
+
+@media only screen and (max-width: 479px) {
+    div.service-list div.row div.col-sm-6,
+    div.doctors-list div.row div.col-sm-6 {
+        width: 100% !important;
+    }
+}

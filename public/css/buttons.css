@@ -1,0 +1,58 @@
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: white;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif; font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 2px solid transparent;
+    white-space: nowrap;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.btn:hover {
+    border: 2px solid rgba(225, 0, 92, 1);
+    color: rgba(225, 0, 92, 1);
+    background-color: transparent;
+}
+
+button.btn:active,
+button.btn:visited,
+button.btn:focus {
+    outline: none!important;
+    color: white!important;
+}
+.btn:active:hover {
+    color: rgba(225, 0, 92, 1)!important;
+}
+.btn:visited:focus {
+    color:white!important;
+}
+.btn:focus:hover {
+    color: rgba(225, 0, 92, 1)!important;
+}
+.grey-btn {
+    background-color: transparent;
+    border: 2px solid rgba(129, 127, 132, 1);
+    color: rgba(129, 127, 132, 1);
+}
+.grey-btn:hover {
+    background-color: transparent;
+    border: 2px solid rgba(129, 127, 132, 0.5);
+    color: rgba(129, 127, 132, 0.5);
+}
+

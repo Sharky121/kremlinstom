@@ -1,0 +1,100 @@
+.c-hamburger {display: none;}
+@media only screen and (max-width : 1280px) {
+    .c-hamburger {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        width: 65px;
+        height: 148px;
+        font-size: 0;
+        text-indent: -9999px;
+        appearance: none;
+        box-shadow: none;
+        border-radius: none;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s;
+        z-index: 1001;
+    }
+
+    .c-hamburger:focus {
+        outline: none;
+    }
+
+    .c-hamburger span {
+        display: block;
+        position: absolute;
+        top: 74px;
+        left: 17px;
+        right: 17px;
+        height: 4px;
+        background: white;
+    }
+
+    .c-hamburger span::before,
+    .c-hamburger span::after {
+        position: absolute;
+        display: block;
+        left: 0px;
+        width: 100%;
+        height: 4px;
+        background-color: #fff;
+        content: "";
+    }
+
+    .c-hamburger span::before {
+        top: -8px;
+    }
+
+    .c-hamburger span::after {
+        bottom: -8px;
+    }
+
+    .c-hamburger--htla {
+        background-color: rgba(202, 216, 102, 1);
+    }
+
+    .c-hamburger--htla span {
+        transition: transform 0.3s;
+    }
+
+    .c-hamburger--htla span::before {
+        transform-origin: top right;
+        transition: transform 0.3s, width 0.3s, top 0.3s;
+    }
+
+    .c-hamburger--htla span::after {
+        transform-origin: bottom right;
+        transition: transform 0.3s, width 0.3s, bottom 0.3s;
+    }
+
+    /* active state, i.e. menu open */
+    .c-hamburger--htla.is-active {
+        background-color: rgba(202, 216, 102, 1);
+    }
+
+    .c-hamburger--htla.is-active span {
+        transform: rotate(180deg);
+    }
+
+    .c-hamburger--htla.is-active span::before,
+    .c-hamburger--htla.is-active span::after {
+        width: 50%;
+    }
+
+    .c-hamburger--htla.is-active span::before {
+        top: 0;
+        transform: translateX(17px) translateY(2px) rotate(45deg);
+    }
+
+    .c-hamburger--htla.is-active span::after {
+        bottom: 0;
+        transform: translateX(17px) translateY(-2px) rotate(-45deg);
+    }
+}
+@media only screen and (max-width : 700px) {
+    .c-hamburger {height: 70px;}
+    .c-hamburger span {top: 34px;}
+}

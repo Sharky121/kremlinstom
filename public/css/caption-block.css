@@ -1,0 +1,313 @@
+.caption-background {
+    display: block;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.4);
+    /*z-index: 1099;*/
+    /*background-image: inherit;*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*-webkit-filter: blur(2px);*/
+    /*-moz-filter: blur(2px);*/
+    /*-o-filter: blur(2px);*/
+    /*-ms-filter: blur(2px);*/
+    /*filter: blur(2px);*/
+    z-index: 1000;
+}
+.breadcrumb {
+    position: relative;
+    padding: 0px 0px;
+    margin-bottom: 0px;
+    list-style: none;
+    background-color: transparent;
+    border-radius: 0px;
+    margin-bottom: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    z-index: 1100;
+}
+
+/* Style the list */
+/*ul.breadcrumb {
+    list-style: none;
+    font-size: 14px;
+}
+
+!* Display list items side by side *!
+ul.breadcrumb li {
+    display: inline;
+}
+
+!* Add a slash symbol (/) before/behind each list item *!
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: rgba(255, 255, 255, 1);
+    content: "\003E";
+}
+
+!* Add a color to all links inside the list *!
+ul.breadcrumb li a {
+    font-family: 'Roboto', sans-serif; font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+ul.breadcrumb li:last-child {
+    font-family: 'Roboto', sans-serif; font-weight: bold;
+    color: rgba(153, 153, 153, 1);
+    pointer-events: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+!* Add a color on mouse-over *!
+ul.breadcrumb li a:hover {
+    color: rgba(225, 0, 92, 1);
+}*/
+
+.doctors-filter {
+    position: absolute;
+    bottom: 15px;
+    margin-top: 20px;
+}
+.doctors-filter a {
+    position: relative;
+    font-family: 'Roboto', sans-serif; font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(153, 153, 153, 1);
+    margin-right: 20px;
+    padding-right: 30px;
+}
+.doctors-filter a:after {
+    position: absolute;
+    content: '';
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/circle-with-a-down-arrow.svg);
+    background-size: contain;
+}
+
+.doctors-filter select {
+    position: relative;
+    font-family: 'Roboto', sans-serif; font-weight: bold;
+    color: rgba(153, 153, 153, 1);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    display: inline-block;
+    width: auto;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 08px;
+    padding-left: 0px;
+    border: 0px solid #cecece;
+    background: transparent;
+    border-radius: 0px;
+    margin-right: 0px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+
+    outline-color: transparent;
+    outline: none;
+}
+.doctors-filter select:after {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/down.svg);
+    background-size: contain;
+}
+
+.caption-block {
+    position: relative;
+    width: 100%;
+    height: 165px;
+    padding-left: 50px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px !important;
+    overflow: hidden;
+}
+.caption-block_background_service {
+    background: transparent none no-repeat scroll right center;
+    background-size: cover;
+}
+.caption-block_background_our-doctors {
+    background-image: url(../img/Arhipenko-big.jpg);
+}
+.caption-block {
+    height: auto;
+    min-height: 165px;
+    padding-bottom: 20px;
+}
+.contacts__head .white-overlay,
+.caption-block .white-overlay {
+    background-color: rgba(255,255,255,0.75);
+    display: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.caption-block_info {
+    position: relative;
+    width: 60%;
+    overflow: hidden;
+    max-height:300px;
+    text-overflow: ellipsis;
+    z-index: 1100;
+}
+
+.caption-block_info h1,
+.contacts__head h1 {
+    color: #212121;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.caption-block_info p {
+    color: #212121;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    width: 100%;
+}
+.caption-block_info.caption-block_info__fullwidth {
+    width: 95%;
+}
+@media only screen and (max-width : 1785px) {
+    .breadcrumb {
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width : 1279px) {
+    .caption-block {height: 300px;}
+    .breadcrumb {margin-bottom: 20px;}
+    .caption-block_info p {font-size: 12px;}
+    .caption-block_info h1 {font-size: 30px;}
+    ul.breadcrumb {
+        list-style: none;
+        list-style-type: none;
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width : 991px) {
+    .caption-block {
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .caption-block_info > p {display: none;}
+    .caption-block_info h1 {font-size: 36px;}
+}
+@media only screen and (max-width : 768px) {
+    .caption-block {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+@media only screen and (max-width : 660px) {
+    ul.breadcrumb {font-size: 12px;}
+    .breadcrumb {margin-bottom: 5px;}
+    .caption-block_info h1 {
+        font-size: 22px;
+        margin-bottom: 0;
+    }
+    .caption-block {
+        height: auto;
+    }
+    ul.breadcrumb li + li::before {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+}
+@media only screen and (max-width : 639px) {
+    .contacts__head .white-overlay,
+    .caption-block .white-overlay {
+        display: block;
+    }
+    .caption-block_info h1 {
+        font-weight: bold;
+    }
+}
+@media only screen and (max-width : 560px) {
+    ul.breadcrumb {
+        display: none;
+    }
+    .caption-block {display: table;}
+    .caption-block_info {
+        width: 100%;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .caption-block_info h1 {
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width : 480px) {
+    ul.breadcrumb {display: none;}
+    .caption-block {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+
+}
+
+@media only screen and (max-width : 400px) {
+    .caption-block_info {
+        width: 100%;
+    }
+    .caption-block {
+        margin-bottom: 0;
+    }
+    .caption-background {
+        display: block;
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.5);
+        /*z-index: 1099;*/
+        /*background-image: inherit;*/
+        /*background-size: cover;*/
+        /*background-position: center;*/
+        /*background-repeat: no-repeat;*/
+        /*-webkit-filter: blur(2px);*/
+        /*-moz-filter: blur(2px);*/
+        /*-o-filter: blur(2px);*/
+        /*-ms-filter: blur(2px);*/
+        /*filter: blur(2px);*/
+    }
+    .caption-block_info h1 {
+        position: relative;
+        z-index: 1100;
+        font-size: 20px;
+    }
+}
+
+

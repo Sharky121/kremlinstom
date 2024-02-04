@@ -1,0 +1,225 @@
+.reg-treatment-block {
+    align-items: center;
+    background-color: #f5f7fa;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.reg-treatment-block > img {
+    display: inline-block;
+    height: auto;
+    vertical-align: top;
+    /*width: 378px;*/
+    width: 300px;
+}
+#reg-treatment-block_wrap {
+    display: inline-block;
+    vertical-align: top;
+    /*width: calc(100% - 382px);*/
+    width: 100%;
+}
+#reg-treatment-block_service-wrap {
+    width: 100%;
+}
+.reg-treatment-block .pure-checkbox {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.reg-treatment-block .pure-checkbox input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 30px;
+    vertical-align: middle;
+    user-select: none;
+    cursor: pointer;
+    font-size: 9px !important;
+    line-height: 1;
+    padding-top: 5px;
+}
+.reg-treatment-block .pure-checkbox input[type="checkbox"] + label a {
+    font-size: 9px !important;
+    line-height: 1;
+}
+.reg-treatment-block .pure-checkbox label a {
+    font-size: 20px;
+    color: rgba(225, 0, 92, 1);
+    text-decoration: underline;
+}
+.reg-treatment-block [class^="col-"] {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: -5px;
+}
+.reg-treatment-block h2 {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #212121;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.reg-treatment-block form {
+    margin-bottom: 40px;
+}
+.reg-treatment-block label {
+    display: block;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+/*.reg-treatment-block label:after {
+    position: absolute;
+    content: '*';
+    color: rgba(225, 0, 92, 1);
+}*/
+.reg-treatment-block input {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 7px 0 7px 10px;
+    border: 1px solid #8ca5bf;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+.reg-treatment-block input:last-child {margin-bottom: 0px;}
+
+
+.reg-treatment-block .form-group {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 25px;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.reg-treatment-block .btn {
+    /*padding: 8px 102px;*/
+    font-family: 'Roboto', sans-serif; font-weight: bold;
+    font-size: 13px;
+    vertical-align: bottom;
+}
+
+.reg-treatment-block p {
+    position: relative;
+    font-family: 'Roboto', sans-serif; font-weight: 300;
+    font-size: 12px;
+    color: rgba(102, 102, 102, 1);
+    padding-left: 10px;
+}
+
+/*.reg-treatment-block p:before {*/
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*content: '*';*/
+    /*color: rgba(102, 102, 102, 1);*/
+/*}*/
+
+.reg-treatment-block span {
+    color: rgba(225, 0, 92, 1);
+}
+/* SERVICE */
+.reg-treatment-block_service {
+    text-align: justify;
+}
+.reg-treatment-block_service .form-group {
+    width: 100%;
+    margin-right: 0px;
+}
+.reg-treatment-block_service .form-group input{
+    margin-right: 0px;
+}
+.reg-treatment-block_service .btn {
+    /*margin-top: 30px;*/
+    margin-left: 0;
+}
+#submitBtn_pain {
+    background-color: #e1005c;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(225, 0, 92, 0.5) 3px 3px 10px 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    height: 37px;
+    line-height: 37px;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+#submitBtn_pain:hover {
+    background-color: white;
+    color: #e1005c;
+}
+.reg-treatment-block_service form {
+    margin-bottom: 5px;
+}
+.reg-treatment-block_service .select-time:after {content: '';}
+.reg-treatment-block_service select {
+    width: 100%;
+    padding: 7px 0 7px 10px;
+    border: 1px solid rgba(177, 202, 0, 1);
+    background: #F6F6f6;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif; font-weight: 300;
+    color: rgba(169, 170, 174, 1);
+}
+
+button#submitBtn_gift_reg-treatment.btn {
+    border: none;
+    box-shadow: rgba(225, 0, 92, 0.5) 3px 3px 10px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.reg-treatment-block .row {margin-bottom: 20px;}
+@media only screen and (max-width : 1199px) {
+    .reg-treatment-block {display: none;}
+}
+
+@media only screen and (max-width : 481px) {
+    .reg-treatment-block {
+        background-color: rgba(233, 239, 195, 1);
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .reg-treatment-block h2 {font-size: 22px;}
+    .reg-treatment-block label {
+        font-size: 18px;
+    }
+    .reg-treatment-block input {
+        font-size: 10px;
+    }
+
+
+
+}
+@media only screen and (max-width : 360px) {
+    .reg-treatment-block h2 {font-size: 20px;}
+    .reg-treatment-block label {
+        font-size: 16px;
+    }
+}

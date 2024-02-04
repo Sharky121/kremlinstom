@@ -1,0 +1,119 @@
+
+
+@media only screen and (max-width : 1199px) {
+    .news-block {display: none;}
+    .tech-block {display: none;}
+    .doctors-block {display: none;}
+    .filter-block_doctors {display: none;}
+}
+
+@media only screen and (max-width : 991px) {
+
+    .caption-wrapper .col-sm-12 {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .custom-center-caption {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
+@media only screen and (max-width : 768px) {
+    .visit-doctor {
+        height: auto;
+    }
+    .visit-doctor-sucess button {
+        position: static;
+    }
+
+}
+@media only screen and (max-width : 700px) {
+    .custom-center > .row {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .appointment {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    /*.mobile-wrap {display: none;}*/
+    /*.mobile-screen {display: block;}*/
+    .mobile-screen_info {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        background-color: rgba(255,255,255,1);
+    }
+    .mobile-screen_info .bigblack-text {
+        font-size: 26px;
+        border-bottom: 2px solid rgba(60, 106, 166, 1);
+        color: rgba(60, 106, 166, 1);
+    }
+    .mobile-screen_info p {
+        font-family: 'Roboto', sans-serif; font-weight: normal;
+        font-size: 20px;
+        color: rgba(51, 51, 51, 1);
+        margin-top: 20px;
+        margin-bottom: 0px;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    .mobile-screen_mail {
+        display: block;
+        padding-top: 20px;
+        font-family: 'Roboto', sans-serif; font-weight: bold;
+        font-size: 18px;
+        color: rgba(60, 106, 166, 1);
+        font-weight: 500;
+    }
+
+    .mobile-screen_service {
+        padding-top: 20px;
+        text-align: center;
+        margin-right: -5px;
+        margin-left: -5px;
+    }
+
+    .mobile-screen_service-blocks {
+        height: 60px;
+        margin-bottom: 20px;
+        text-align: center;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .mobile-screen_service-blocks a {
+        display: block;
+        height: 100%;
+        font-size: 14px;
+        padding-top: 20px;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif; font-weight: bold;
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(60, 106, 166, 1);
+        cursor: pointer;
+    }
+
+    .mobile-screen_service-blocks_tour a {
+        padding-top: 16px;
+        font-size: 11px;
+    }
+    .close {
+        font-size: 30px;
+    }
+}
+
+
+@media only screen and (max-width : 480px) {
+    .appointment {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+
+
+}

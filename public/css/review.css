@@ -1,0 +1,213 @@
+.review-wrapper {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 20px 0 0;
+    margin-bottom: 20px;
+}
+.review-wrapper p {
+    color: #485363;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.review-wrapper h4 {
+    color: #485363;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.review-wrapper .review-block {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px 0;
+    margin-bottom: 40px;
+    padding: 10px 20px;
+    position: relative;
+}
+.review-wrapper .review-block::before {
+    background-color: white;
+    bottom: -15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px 0;
+    content: '';
+    height: 30px;
+    position: absolute;
+    right: 5%;
+    transform: rotate(45deg);
+    width: 30px;
+}
+.review-wrapper .review-block::after {
+    background-color: white;
+    bottom: 0;
+    content: '';
+    height: 25px;
+    position: absolute;
+    right: calc(5% - 10px);
+    width: 50px;
+}
+.review-wrapper .review-block:last-of-type {
+    margin-bottom: 0 !important;
+}
+.review-wrapper a {
+    background-color: #e1005c;
+    border: none !important;
+    border-radius: 10px;
+    box-shadow: rgba(225, 0, 92, 0.5) 3px 3px 10px 0 !important;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    height: 37px;
+    line-height: 37px;
+    margin: 0 auto 40px;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+    width: 235px;
+}
+.review-wrapper a:hover {
+    background-color: white;
+    color: #e1005c;
+}
+.review-wrapper a:before {
+    position: absolute;
+    /*content: '';*/
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 50%;
+    margin-top: -10px;
+    background-image: url('../img/round-add-button.svg');
+    background-size: contain;
+}
+#review textarea{
+    width: 100%;
+}
+#review .pure-checkbox{
+    width: 100%;
+    text-align: left;
+}
+
+#review .pure-checkbox input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 30px;
+}
+
+#modal-review {
+    width: 300px;
+}
+
+#modal-review .modal-content {
+    border-radius: 10px;
+    width: 300px;
+}
+
+#modal-review .modal-content .modal-header {
+    border-bottom: none !important;
+}
+
+#modal-review .modal-content .modal-header h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    margin: 0;
+    text-align: left;
+}
+
+#modal-review .modal-content .modal-body {
+    padding: 15px 20px;
+}
+
+#modal-review .modal-content .modal-body .input-group {
+    margin-bottom: 0;
+    text-align: left;
+}
+
+#modal-review .modal-content .modal-body label {
+    color: #485363;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+}
+
+#modal-review .modal-content .modal-body input,
+#modal-review .modal-content .modal-body textarea {
+    border: solid 1px #8ca5bf;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    resize: none;
+}
+
+#modal-review .modal-content label[for="checkbox_recommendation"],
+#modal-review .modal-content label[for="checkbox_recommendation"] * {
+    font-size: 9px;
+    line-height: 1;
+    padding-top: 8px;
+}
+
+#modal-review .modal-content .pure-checkbox + .input-group {
+    margin-top: 20px;
+}
+
+#modal-review .modal-content .recapt > div {
+    /**/
+}
+
+#modal-review .modal-content .modal-footer {
+    border-top: none;
+    padding: 0;
+}
+
+#submitBtn_recommendation {
+    border: none !important;
+    box-shadow: rgba(225, 0, 92, 0.5) 3px 3px 10px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+#submitBtn_recommendation:hover {
+    background-color: white;
+    color: #e1005c;
+}
+
+@media only screen and (max-width : 480px) {
+    .review-wrapper p:before {
+        display: none;
+    }
+    .review-wrapper p {
+        padding-left: 0;
+    }
+    .review-wrapper h4 {
+        padding-left: 0;
+    }
+    .review-wrapper .review-block {
+        margin-bottom: 0;
+    }
+
+}
+@media only screen and (max-width : 400px) {
+    .review-wrapper {
+        background-color: rgba(255, 255, 255, 1);
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 0px;
+    }
+    .review-wrapper a {
+        margin-top: 10px;
+        padding-left: 30px;
+        float: none;
+        margin-bottom: 10px;
+    }
+    .review-wrapper p:first-child {
+        margin-top: 10px;
+    }
+}

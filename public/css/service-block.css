@@ -1,0 +1,194 @@
+.service-block {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);    
+}
+.service-block img {
+    width: 25px;
+    height: 25px;
+}
+.service-block h3 {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: rgba(51, 51, 51, 1);
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.service-block_filter {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1); 
+}
+.service-block_filter a {
+    display: inline-block;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase; 
+    color: rgba(210, 210, 210, 1);
+}
+.service-block_filter a.active {
+    border-bottom: 2px solid rgba(51, 51, 51, 1);
+    color: rgba(51, 51, 51, 1);
+}
+.service-block_filter a:hover {color: rgba(225, 0, 92, 1);}
+
+.service-block a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(51, 51, 51, 1); 
+    display: block;   
+}
+.service-block a:hover {background-color: rgba(233, 239, 195, 0.6);}
+.service-block_inner {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.service-block li {border-bottom: 1px solid rgba(210, 210, 210, 1);}
+.service-block li.active {
+    position: relative;
+    background-color: rgba(233, 239, 195, 0.6);
+}
+.service-block li.active:after {
+    position: absolute;
+    content: '';
+    width: 7px;
+    height: 12px;
+    right: 15px;
+    top: 50%;
+    margin-top: -3px;
+    background: url(../img/Tick_side.svg);
+    background-size: contain;
+}
+.white-box {
+    background-color: #fff;
+}
+
+.info-block {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.info-block p {
+    color: #485363;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    margin-bottom: 20px;
+}
+.info-block h2 {
+    color: #212121;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.info-block table {
+    width: 100%;
+    margin-top: 20px;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px rgba(0,0,0,0.05);
+    overflow: hidden;
+    color: #485363;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+}
+.info-block ul.page-content li {
+    color: #485a8e;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+}
+.info-block table th,
+.info-block table td {
+    width: 50%;
+    padding: 10px 15px;
+}
+
+.info-block table tr:nth-child(2n+1) {
+    background: #ebf0f7;
+}
+.info-block table td {
+    width: calc(100% - 230px);
+}
+.info-block table td + td {
+    font-weight: bold;
+    width: 230px;
+}
+.info-block-background {
+    background-image: url(../img/caption-background.jpg);
+    background-size: cover;
+}
+.service-item_review-carousel .item h3 {
+    text-align: left;
+}
+.service-item_review-carousel .item p {
+    text-align: left;
+}
+.filter-block_service {
+    margin-top: 0px;
+}
+.filter-block_service a {
+    /*padding-left: 45px;*/
+}
+.filter-block_service a.active-tab {
+    color: black;
+    width: 100%;
+    background-color: white;
+}
+.service-block ul {
+    margin-top: 60px;
+}
+
+@media only screen and (max-width : 1279px) {
+    .service-block_inner img {display: none;}
+
+    .service-block_inner .doctors-block_item-text {
+        margin-left: 0px;
+        padding-right: 0px;
+        width: 100%;
+    }
+    .info-block {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .info-block h2 {
+        font-family: 'Roboto', sans-serif; font-weight: 300;
+        color: rgba(62, 62, 72, 1);
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+}
+
+/* PRICE TABLE */
+.table-price {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.table-price table {
+    width: 100%;
+    margin-bottom: 50px;
+}
+/* END PRICE TABLE */

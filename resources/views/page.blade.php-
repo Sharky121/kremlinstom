@@ -1,0 +1,57 @@
+@extends('layouts.app')
+@section ('content')
+    <div class="container-fluid custom-center custom-center-caption">
+        <div class="row">
+            <div class="col-sm-12 col-md-9 col-md-push-3 right-column-menu">
+                @include('parts.caption-block')
+
+                @if($page -> id == 19)
+                    <div class="text-content">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6">
+                                    <a class="tourizm" data-lc-href="/video/tour.mp4" data-rel="lightcase">
+                                        <img src="/img/video-tourism.jpg" style="max-width:100%;" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6">
+                                    <p>«Кремлевская Стоматология» станет лучшим выбором для вас, предлагая самый широкий спектр стоматологических услуг
+                                        по оптимальным ценам.
+                                    </p>
+
+                                    <p>Вы будете очень приятно удивлены качеством и стоимостью наших услуг, а посещение расположенного через дорогу
+                                        от нас музея-заповедника Рязанский Кремль превратит вашу поездку в интереснейшую экскурсию.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endif
+
+                <div class="text-content">
+                    {!! $page->content !!}
+                </div>
+
+                @if($page->childs->where('public',1)->count()>0)
+                    @foreach($page->childs->where('public',1) as $child)
+                        <a href="{{ $child->url() }}">{{ $child->title }}</a><br>
+                    @endforeach
+                @endif
+                {{--@if(isset($page->video_link))--}}
+                {{--<div class="video-content" style="margin-bottom: 20px;">--}}
+                   {{--<iframe src="{{ $page->video_link }}"></iframe>--}}
+                {{--</div>--}}
+                {{--@endif--}}
+                @include('parts.asking-block')
+            </div>
+            <div class="col-sm-12 col-md-3 col-md-pull-9 left-column-menu">
+                @include('parts.left-block-menu')
+                @include('parts.left-block-modules')
+                {{--  --}}
+            </div>
+        </div>
+    </div>
+@endsection
+
+

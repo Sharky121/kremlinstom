@@ -1,0 +1,131 @@
+.service-block_collapse,
+.doctors-block_collapse,
+.tech-block_collapse {
+    background-color: white !important;
+    box-shadow: 3px 3px 20px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.service-block_collapse > a,
+.doctors-block_collapse > a,
+.tech-block_collapse > a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    line-height: 19px !important;
+    text-align: center !important;
+    text-transform: none !important;
+    transition: color 0.3s ease-in-out !important;
+}
+
+.service-block_collapse > a:hover,
+.doctors-block_collapse > a:hover,
+.tech-block_collapse > a:hover {
+    background-color: white !important;
+    box-shadow: 3px 3px 20px rgba(0,0,0,0.05);
+    color: #e1005c !important;
+}
+
+.service-block_collapse a::before,
+.doctors-block_collapse a::before,
+.tech-block_collapse a::before {
+    background: transparent url('/img_new/arrow2.svg') no-repeat scroll center !important;
+    background-size: cover !important;
+    transform: rotate(90deg);
+}
+
+.service-block_collapse a.active::before,
+.doctors-block_collapse a.active::before,
+.tech-block_collapse a.active::before {
+    transform: rotate(270deg) !important;
+}
+
+.service-block_collapse a::after,
+.doctors-block_collapse a::after,
+.tech-block_collapse a::after {
+    content: normal !important;
+}
+
+.service-block_collapse > ul,
+.doctors-block_collapse > ul,
+.tech-block_collapse > ul {
+    background-color: #ebf0f7;
+}
+
+.service-block_collapse {
+    background-color: rgba(255, 255, 255, 1);
+    margin-bottom: 2px;
+}
+.service-block_collapse > a {
+    display: block;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-family: 'Roboto', sans-serif; font-weight: bold;
+    text-transform: uppercase;
+    color: rgba(51, 51, 51, 1);
+}
+.service-block_collapse > a:hover {
+    background-color: rgba(233, 239, 195, 0.6);
+}
+.service-block_collapse a.active {
+    background-color: rgba(233, 239, 195, 1);
+}
+.service-block_collapse a.active:hover {
+    background-color: rgba(233, 239, 195, 0.6);
+}
+.service-block_collapse a.active::before {
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+.service-block_collapse > a::after {
+    position: absolute;
+    content: '';
+    right: 20px;
+    top: 50%;
+    margin-top: -12px;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/circle.min.svg);
+    background-size: contain;
+}
+.service-block_collapse > a::before {
+    position: absolute;
+    content: '';
+    right: 20px;
+    top: 50%;
+    margin-top: -12px;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/down-arrow.min.svg);
+    background-size: contain;
+    transition: all 0.3s ease-in-out;
+}
+.service-block_collapse ul {display: none;}
+.service-block_collapse li {border-bottom: 1px solid rgba(210, 210, 210, 1);}
+.service-block_inner img {
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+}
+.service-block_inner h3 {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 0 !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px !important;
+    color: #485363 !important;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: color 0.3s ease-in-out;
+}
+.service-block_inner:hover h3 {
+    color: #e1005c !important;
+}
+.service-block_collapse a {display: block;}
+.service-block_collapse a:hover {background-color: rgba(233, 239, 195, 0.6);}

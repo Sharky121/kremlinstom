@@ -1,0 +1,180 @@
+.doctors-block {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+}
+.doctors-block img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.doctors-block h3 {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: rgba(51, 51, 51, 1);
+    font-weight: 600;
+    width: 70%;
+}
+.doctors-block p {
+    font-family: 'Roboto', sans-serif;
+    color: rgba(51, 51, 51, 1);
+    font-size: 16px;
+
+}
+.doctors-block_item-text {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 0 !important;
+    background-color: transparent !important;
+}
+.doctors-block_collapse:not(.doctors-blog_collapse) .doctors-block-inner .doctors-block_item-text {
+    padding-left: 15px;
+    width: 70% !important;
+}
+.doctors-block_collapse:not(.doctors-blog_collapse) .doctors-block-inner .doctors-block_item-text h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 19px;
+    margin-bottom: 5px;
+}
+.doctors-block_collapse:not(.doctors-blog_collapse) .doctors-block-inner .doctors-block_item-text p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+}
+.service-block_collapse .doctors-block_item-text {
+    padding-left: 15px !important;
+}
+.service-block_collapse a {
+    background-color: transparent !important;
+}
+.doctors-block_collapse.doctors-blog_collapse .doctors-block_item-text {
+    width: 100% !important;
+}
+.doctors-block li {
+    border-bottom: 1px solid rgba(210, 210, 210, 1);
+}
+.doctors-block a {
+    display: block;
+}
+.doctors-block a:hover {
+    background-color: rgba(236, 248, 252, 1);
+}
+.doctors-block a:hover {
+    background-color: rgba(236, 248, 252, 1);
+}
+.doctors-block-inner {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: transparent !important;
+}
+.doctors-block li:last-child .doctors-block-inner {
+    border-bottom: 0px solid rgba(210, 210, 210, 1);
+    padding-bottom: 45px;
+}
+.doctors-block li.active {
+    position: relative;
+    background-color: rgba(236, 248, 252, 1);
+}
+.doctors-block li.active:after {
+    position: absolute;
+    content: '';
+    width: 7px;
+    height: 12px;
+    right: 15px;
+    top: 18%;
+    background: url(../img/Tick_side.svg);
+    background-size: contain;
+}
+.filter-block {
+    background-color: rgba(255, 255, 255, 1);
+}
+.filter-block a {
+    display: inline-block;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: rgba(210, 210, 210, 1);
+}
+.filter-block a:hover {
+    color: rgba(225, 0, 92, 1);
+}
+.filter-block a.active-tab {
+    color: rgba(51, 51, 51, 1);
+    border-bottom: 2px solid rgba(51, 51, 51, 0.6);
+}
+.filter-block a:last-child {
+    float:right;
+}
+
+/*.round {*/
+    /*width: 200px;*/
+    /*height: 200px;*/
+    /*border-radius: 50%;*/
+/*}*/
+/*********************************************/
+               /* MEDIA 1665*/
+/*********************************************/
+@media only screen and (max-width : 1665px) {
+    .doctors-block_item-text {
+        margin-left: 15px;
+        width: 65%;
+    }
+
+}
+
+@media only screen and (max-width : 1279px) {
+    .doctors-block-inner img {display: none;}
+    .doctors-block_item-text {
+        margin-left: 15px;
+       padding-right: 15px;
+        width: 100%;
+    }
+    .doctors-block_item-text h3 {width: 100%;}
+
+}
+@media only screen and (max-width : 1199px) {
+    .doctor-item h3 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        color: rgba(51, 51, 51, 1);
+        font-weight: 600;
+        margin: 0 auto;
+        width: 80%;
+        padding-bottom: 15px;
+        /*padding-right: 10px;*/
+        /*padding-left: 10px;*/
+        margin-bottom: 5px;
+        margin-top: 20px;
+        border-bottom: 2px solid rgba(177, 202, 0, 1);
+    }
+    .main-box a.gallery-link.welcome-page {
+        margin-top: 7px;
+    }
+
+}
+
+
+
+@media only screen and (max-width : 991px) {
+    .doctors-block-inner img {display: inline-block;}
+    .doctors-block_item-text {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 20px;
+        width: 70%;
+    }
+
+    .doctors-block_item-text h3 {width: 100%;}
+}
+@media only screen and (max-width : 330px) {
+    .doctors-block_item-text {width: 65%;}
+}

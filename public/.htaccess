@@ -1,0 +1,98 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+    RewriteEngine On
+
+RewriteRule ^uslugi-i-tseny/services$ https://www.kremlinstom.ru/uslugi-i-tseny [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^([^www].*)$
+RewriteRule ^(.*)$ https://www.%1/$1 [L,R=301]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP
+RewriteRule ^index\.php$ https://www.kremlinstom.ru/ [R=301,L]
+
+RewriteRule ^patsientam/blog(.*)$ https://www.kremlinstom.ru/blog$1 [R=301,L]
+
+RewriteRule ^doctors/mugaenitdinova-marina-tagievna$ https://www.kremlinstom.ru/ [R=301,L]
+
+
+RewriteRule ^about/nagrady$ /nagrady [R=301,L]
+RewriteRule ^about/our-doctors$ /about/doctors [R=301,L]
+RewriteRule ^about/vakansii$ /about/vacancies [R=301,L]
+#RewriteRule ^price$ /uslugi-i-tseny [R=301,L]
+RewriteRule ^priem$ / [R=301,L]
+RewriteRule ^services/28$ /uslugi-i-tseny/protezirovanie [R=301,L]
+RewriteRule ^services/30$ / [R=301,L]
+RewriteRule ^services/31$ /uslugi-i-tseny/lechenie-zubov [R=301,L]
+RewriteRule ^services/32$ /uslugi-i-tseny/udalenie-zubov-mudrosti [R=301,L]
+RewriteRule ^services/33$ /tourism [R=301,L]
+RewriteRule ^services/34$ /uslugi-i-tseny/otbelivanie-zubov [R=301,L]
+RewriteRule ^services/35$ /uslugi-i-tseny/hirurgicheskaya-stomatologiya [R=301,L]
+RewriteRule ^services/37$ /uslugi-i-tseny/detskaya-stomatologiya [R=301,L]
+RewriteRule ^services/38$ /uslugi-i-tseny/parodontologiya [R=301,L]
+RewriteRule ^services/39$ /uslugi-i-tseny/ispravlenie-prikusa [R=301,L]
+RewriteRule ^services/40$ /uslugi-i-tseny/chistka-zubov [R=301,L]
+RewriteRule ^services/42$ /uslugi-i-tseny/udalenie-zubov [R=301,L]
+RewriteRule ^services/implantaciya-zubov$ /uslugi-i-tseny/implantaciya-zubov [R=301,L]
+RewriteRule ^about/vacancies$ https://www.kremlinstom.ru/vacancies [R=301,L]
+
+RewriteCond %{REQUEST_URI} !/uslugi-i-tseny/udalenie-zubov-mudrosti$
+RewriteRule ^uslugi-i-tseny/udalenie-zubov-mudrosti(.*)$ https://www.kremlinstom.ru/uslugi-i-tseny/udalenie-zubov-mudrosti [R=301,L]
+
+RewriteRule ^about/doctors/dubovitskaya-aliftina-ivanovna$ - [G]
+#RewriteRule ^about/doctors/drangoy-inna-nikolaevna$ - [G]
+#RewriteRule ^about/doctors/afonina-elena-viktorovna$ - [G]
+RewriteRule ^about/doctors/fedorov-denis-alekseevich$ - [G]
+RewriteRule ^about/doctors/matveev-evgeniy-alekseevich$ - [G]
+RewriteRule ^about/doctors/shvetsova-kristina-vladimirovna$ - [G]
+RewriteRule ^about/doctors/maksimova-ekaterina-evgenevna$ - [G]
+RewriteRule ^about/doctors/miloslavskiy-vladislav-vladislavovich$ - [G]
+
+RewriteRule ^doctors/mugaenetdinova-marina-tagievna$ - [G]
+RewriteRule ^doctors/medentsev-ruslan-olegovich$ - [G]
+RewriteRule ^about/ispolzuemye-tekhnologii/kachestvennoe-lechenie-kanalov-zubov$ - [G]
+RewriteRule ^doctors/andronova-olga-nikolaevna$ - [G]
+
+
+RewriteRule ^doctors/kalinina-inessa-yurevna$ - [G]
+RewriteRule ^doctors/matveev-evgeniy-alekseevich$ - [G]
+RewriteRule ^doctors/savilova-svetlana-konstantinovna$ - [G]
+RewriteRule ^doctors/fedorov-denis-alekseevich$ - [G]
+
+
+
+RewriteRule ^patsientam/blog/razdel-3$ - [G]
+RewriteRule ^patsientam/blog/razdel-2$ - [G]
+RewriteRule ^patsientam/blog/razdel-1$ - [G]
+
+
+RewriteRule ^uslugi-i-tseny/price$ - [G]
+RewriteRule ^about/doctors/tel:88007752577$ - [G]
+RewriteRule ^about/ispolzuemye-tekhnologii/tel:88007752577$ - [G]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+
+
+
+
+
+</IfModule>
+
+    Redirect 301 /services/lechenie-zubov http://www.kremlinstom.ru/uslugi-i-tseny/vse-uslugi/lechenie-kariesa
+
+
