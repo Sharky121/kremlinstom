@@ -20,37 +20,8 @@
 
     <meta name="keywords" content="{{ isset($keywords_seo)?$keywords_seo:'' }}"/>
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
-
     <!-- Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="/css/fonts.css">
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
-
-    <!-- Owl Stylesheets -->
-    <link rel="stylesheet" href="/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="/css/owl.theme.default.css">
-
-    <!-- Lightcase -->
-    <link rel="stylesheet" href="/css/lightcase.css">
-
-    <!-- Master Slider -->
-    <link rel="stylesheet" href="/css/masterslider.css">
-
-    <!-- Animate -->
-    <link rel="stylesheet" href="/css/hover.css">
-    <link rel="stylesheet" href="/css/animate.css">
-
-    <!-- Common Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/css/header.css">
-    <link rel="stylesheet" type="text/css" href="/css/footer.css">
-    <link rel="stylesheet" type="text/css" href="/css/buttons.css">
-    <link rel="stylesheet" type="text/css" href="/css/hamburger.css">
-    <link rel="stylesheet" type="text/css" href="/css/md-preloader.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/jquery.rtResponsiveTables.min.css">
-
-
+    <link rel="stylesheet" type="text/css" href="/master/main.css">
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125337794-1"></script>
