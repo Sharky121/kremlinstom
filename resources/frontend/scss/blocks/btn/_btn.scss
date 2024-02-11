@@ -1,0 +1,70 @@
+@use "../../abstract" as var;
+
+.btn {
+    @extend %btn-reset;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 170px;
+    padding: 10px 15px;
+
+    color: var.$brand-danger-200;
+
+    border: 2px solid var.$brand-danger-200;
+    border-radius: 10px;
+    background-color: var.$brand-white;
+
+    transition: 0.3s ease-out;
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    &__text {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1;
+        white-space: nowrap;
+    }
+
+    &:hover,
+    &:active {
+        color: var.$brand-white;
+
+        background-color: var.$brand-danger-200;
+    }
+
+    &:focus {
+        outline: none;
+
+        color: var.$brand-white;
+
+        background-color: var.$brand-danger-200;
+    }
+}
+
+.btn--danger {
+    color: var.$brand-white;
+
+    background-color: var.$brand-danger-200;
+
+    &:hover,
+    &:active {
+        color: var.$brand-danger-200;
+
+        background-color: transparent;
+        border-color: var.$brand-danger-200;
+    }
+
+    &:focus {
+        outline: none;
+
+        color: var.$brand-danger-200;
+
+        background-color: transparent;
+        border-color: var.$brand-danger-200;
+    }
+}

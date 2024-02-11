@@ -1,0 +1,50 @@
+@use "../../abstract" as var;
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.header {
+    height: 60px;
+    width: 100%;
+
+    border-bottom: 1px solid var.$brand-grey-100;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.header__callback {
+    display: none;
+}
+
+.header--sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    backdrop-filter: blur(10px);
+    animation: slideDown 0.35s ease-out;
+}
+
+@include var.desktop-size {
+
+    .header {
+        height: 80px;
+    }
+
+    .header__callback {
+        display: block;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+}

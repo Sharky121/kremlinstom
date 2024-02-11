@@ -20,6 +20,8 @@
 
     <meta name="keywords" content="{{ isset($keywords_seo)?$keywords_seo:'' }}"/>
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
+
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="/master/main.css">
     

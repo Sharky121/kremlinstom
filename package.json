@@ -15,9 +15,11 @@
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.10.0",
+    "file-loader": "^6.2.0",
     "mini-css-extract-plugin": "^2.8.0",
     "sass": "^1.70.0",
     "sass-loader": "^14.1.0",
+    "url-loader": "^4.1.1",
     "webpack": "^5.90.1",
     "webpack-cli": "^5.1.4"
   },

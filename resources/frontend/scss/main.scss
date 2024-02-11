@@ -2,3 +2,12 @@
 
 @use "fonts";
 @use "base";
+@use "helpers";
+
+@use "./blocks/btn";
+@use "./blocks/logo";
+@use "./blocks/main-nav";
+@use "./layout/page";
+@use "./layout/header";
+@use "./layout/main";
+@use "./layout/footer";

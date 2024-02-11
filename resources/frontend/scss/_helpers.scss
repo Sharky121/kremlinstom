@@ -1,0 +1,34 @@
+@use "abstract" as var;
+
+.container {
+    max-width: var.$mobile-width;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(100%); 
+    height: 1px; 
+    overflow: hidden; 
+    position: absolute; 
+    white-space: nowrap; 
+    width: 1px; 
+}
+
+@include var.tablet-size {
+
+    .container {
+        max-width: var.$tablet-width;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@include var.desktop-size {
+
+    .container {
+        max-width: var.$desktop-width;
+    }
+}

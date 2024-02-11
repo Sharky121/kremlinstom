@@ -1,0 +1,19 @@
+@use "variables" as var;
+
+@mixin mobile-size {
+  @media (min-width: #{var.$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin tablet-size {
+  @media (min-width: #{var.$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop-size {
+  @media (min-width: #{var.$desktop-width}) {
+    @content;
+  }
+}

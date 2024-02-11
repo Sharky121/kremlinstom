@@ -1,0 +1,13 @@
+@use "../../abstract" as var;
+
+.logo__img {
+    vertical-align: middle;
+}
+
+@include var.desktop-size {
+
+    .logo__img {
+        width: 161px;
+        height: 44px;
+    }
+}

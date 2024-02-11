@@ -51,7 +51,6 @@ module.exports = {
       },
       resolve: {
         modules: [
-          path.resolve(__dirname, "images"),
           "node_modules"
         ],
       },
