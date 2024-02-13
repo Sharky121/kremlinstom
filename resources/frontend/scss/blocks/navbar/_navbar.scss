@@ -1,0 +1,19 @@
+@use "../../abstract" as var;
+
+.navbar {
+    padding: 10px 0;
+}
+
+.navbar__list {
+    @extend %list-reset;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar__item {
+    width: calc(100% / 5);
+
+    text-align: center;
+}

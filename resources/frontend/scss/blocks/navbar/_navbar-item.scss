@@ -1,0 +1,30 @@
+@use "../../abstract" as var;
+
+.navbar-item {
+    color: var.$brand-black;
+
+    &--success {
+        color: var.$brand-success;
+    }
+
+    &--danger {
+        color: var.$brand-danger-200;
+    }
+}
+
+.navbar-item__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: inherit;
+}
+
+.navbar-item__icon {
+    margin-bottom: 7px;
+}
+
+.navbar-item__title {
+    font-size: 10px;
+}

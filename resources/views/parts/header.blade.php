@@ -4,7 +4,7 @@
             <img class="logo__img" src="/master/images/logo.svg" width="151" height="40" alt="Логотип Кремлевская стоматология">
         </a>
 
-        <nav class="header__nav main-nav">
+        <!-- <nav class="header__nav main-nav">
             <div class="main-nav__wrapper">
                 <ul class="main-nav__list">
                     <li class="main-nav__item">
@@ -12,7 +12,7 @@
                     </li>
                 </ul>
             </div>
-        </nav>
+        </nav> -->
 
         <div class="header__callback header-callback">
             <div class="header-callback__wrapper">
