@@ -8,6 +8,7 @@ import './fonts/PTSans-Bold.woff2';
 import './images/logo.svg';
 import './images/ico-tooth.svg';
 import './images/ico-whatsapp.svg';
+import './images/ico-search.svg';
 
 // STYLE IMPORT
 import './scss/main.scss';

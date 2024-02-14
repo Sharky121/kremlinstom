@@ -11,7 +11,7 @@
                 <div class="footer__navbar navbar">
                     <ul class="navbar__list">
                         <li class="navbar__item navbar-item">
-                            <a class="navbar-item__link" href="">
+                            <a class="navbar-item__link"id="mobile-menu-trigger">
                                 <svg class="navbar-item__icon" viewBox="0 0 20 19" width="20" height="18" aria-hidden="true" focusable="false" role="img">
                                     <use xlink:href="#ico-menu"></use>
                                 </svg>

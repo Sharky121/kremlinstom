@@ -27,7 +27,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _fonts_PTSans_Regular_woff__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fonts/PTSans-Regular.woff */ \"./resources/frontend/fonts/PTSans-Regular.woff\");\n/* harmony import */ var _fonts_PTSans_Regular_woff2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./fonts/PTSans-Regular.woff2 */ \"./resources/frontend/fonts/PTSans-Regular.woff2\");\n/* harmony import */ var _fonts_PTSans_Bold_woff__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fonts/PTSans-Bold.woff */ \"./resources/frontend/fonts/PTSans-Bold.woff\");\n/* harmony import */ var _fonts_PTSans_Bold_woff2__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./fonts/PTSans-Bold.woff2 */ \"./resources/frontend/fonts/PTSans-Bold.woff2\");\n/* harmony import */ var _images_logo_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./images/logo.svg */ \"./resources/frontend/images/logo.svg\");\n/* harmony import */ var _images_ico_tooth_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./images/ico-tooth.svg */ \"./resources/frontend/images/ico-tooth.svg\");\n/* harmony import */ var _images_ico_whatsapp_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./images/ico-whatsapp.svg */ \"./resources/frontend/images/ico-whatsapp.svg\");\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./scss/main.scss */ \"./resources/frontend/scss/main.scss\");\n/* harmony import */ var _js_common_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./js/common.js */ \"./resources/frontend/js/common.js\");\n/* harmony import */ var _js_common_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_js_common_js__WEBPACK_IMPORTED_MODULE_8__);\n// FONTS\n\n\n\n\n\n// IMAGES IMPORT\n\n\n\n\n// STYLE IMPORT\n\n\n// JS IMPORT\n\n\n//# sourceURL=webpack://kremlinstom.local/./resources/frontend/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _fonts_PTSans_Regular_woff__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fonts/PTSans-Regular.woff */ \"./resources/frontend/fonts/PTSans-Regular.woff\");\n/* harmony import */ var _fonts_PTSans_Regular_woff2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./fonts/PTSans-Regular.woff2 */ \"./resources/frontend/fonts/PTSans-Regular.woff2\");\n/* harmony import */ var _fonts_PTSans_Bold_woff__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fonts/PTSans-Bold.woff */ \"./resources/frontend/fonts/PTSans-Bold.woff\");\n/* harmony import */ var _fonts_PTSans_Bold_woff2__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./fonts/PTSans-Bold.woff2 */ \"./resources/frontend/fonts/PTSans-Bold.woff2\");\n/* harmony import */ var _images_logo_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./images/logo.svg */ \"./resources/frontend/images/logo.svg\");\n/* harmony import */ var _images_ico_tooth_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./images/ico-tooth.svg */ \"./resources/frontend/images/ico-tooth.svg\");\n/* harmony import */ var _images_ico_whatsapp_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./images/ico-whatsapp.svg */ \"./resources/frontend/images/ico-whatsapp.svg\");\n/* harmony import */ var _images_ico_search_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./images/ico-search.svg */ \"./resources/frontend/images/ico-search.svg\");\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./scss/main.scss */ \"./resources/frontend/scss/main.scss\");\n/* harmony import */ var _js_common_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./js/common.js */ \"./resources/frontend/js/common.js\");\n/* harmony import */ var _js_common_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_js_common_js__WEBPACK_IMPORTED_MODULE_9__);\n// FONTS\n\n\n\n\n\n// IMAGES IMPORT\n\n\n\n\n\n// STYLE IMPORT\n\n\n// JS IMPORT\n\n\n//# sourceURL=webpack://kremlinstom.local/./resources/frontend/index.js?");
 
 /***/ }),
 
@@ -37,7 +37,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _fon
   \*****************************************/
 /***/ (() => {
 
-eval("const header = document.querySelector(\"#page-header\");\n\nconst toggleClass = \"header--sticky\";\n\nwindow.addEventListener(\"scroll\", () => {\n  const currentScroll = window.scrollY;\n  \n  if (currentScroll > 150) {\n    header.classList.add(toggleClass);\n  } else {\n    header.classList.remove(toggleClass);\n  }\n});\n\n//# sourceURL=webpack://kremlinstom.local/./resources/frontend/js/common.js?");
+eval("const headerElement = document.querySelector(\"#page-header\");\nconst mobileMenuTriggerElement = document.querySelector(\"#mobile-menu-trigger\");\n\nconst toggleClass = \"header--sticky\";\n\nwindow.addEventListener(\"scroll\", () => {\n  const currentScroll = window.scrollY;\n  \n  if (currentScroll > 150) {\n    headerElement.classList.add(toggleClass);\n  } else {\n    headerElement.classList.remove(toggleClass);\n  }\n});\n\nmobileMenuTriggerElement.addEventListener('click', () => {\n  \n});\n\n//# sourceURL=webpack://kremlinstom.local/./resources/frontend/js/common.js?");
 
 /***/ }),
 
@@ -82,6 +82,17 @@ eval("module.exports = __webpack_require__.p + \"fonts/PTSans-Regular.woff\";\n\
 
 "use strict";
 eval("module.exports = __webpack_require__.p + \"fonts/PTSans-Regular.woff2\";\n\n//# sourceURL=webpack://kremlinstom.local/./resources/frontend/fonts/PTSans-Regular.woff2?");
+
+/***/ }),
+
+/***/ "./resources/frontend/images/ico-search.svg":
+/*!**************************************************!*\
+  !*** ./resources/frontend/images/ico-search.svg ***!
+  \**************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"images/ico-search.svg\";\n\n//# sourceURL=webpack://kremlinstom.local/./resources/frontend/images/ico-search.svg?");
 
 /***/ }),
 
