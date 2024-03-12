@@ -1,0 +1,127 @@
+@use "../../abstract" as var;
+
+.welcome {
+    background-color: var.$brand-white;
+    background-image: url("/resources/frontend/images/welcome_bg.jpg");
+    background-position: center bottom 125px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.welcome__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 410px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+    background-image: url("/resources/frontend/images/welcome_doctor.png");
+    background-position: right top 16px;
+    background-size: 204px 269px;
+    background-repeat: no-repeat;
+}
+
+.welcome__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.welcome__subtitle {
+    margin: 0;
+}
+
+.welcome__btn {
+    margin-top: auto;
+    width: 100%;
+}
+
+.welcome__video {
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 60px;
+    vertical-align: middle;
+    height: 60px;
+
+    color: var.$brand-danger-200;
+
+    border-radius: 50%;
+    // box-shadow: 0 0 0 1px rgba(var.$brand-danger-200, 0.1), 0 0 0 8px transparent, 
+    //             0 0 0 16px transparent, 0 0 0 18px rgba(var.$brand-danger-200, 0.05);
+}
+
+.welcome__skill-btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+@include var.tablet-size {
+
+    .welcome {
+        background-position: center;
+    }
+
+    .welcome__container {
+        position: relative;
+
+        height: 503px;
+        padding-top: 135px;
+        padding-bottom: 20px;
+
+        background-position: right bottom;
+        background-size: 354px 457px;
+    }
+
+    .welcome__title {
+        max-width: 520px;
+        margin-bottom: 15px;
+    
+        font-size: 38px;
+
+        br {
+            display: none;
+        }
+    }
+
+    .welcome__subtitle {
+        font-size: 20px;
+    }
+
+    .welcome__btn {
+        margin-top: 30px;
+        width: auto;
+    }
+
+    .welcome__video {
+        position: absolute;
+        left: 55%;
+        top: 50%;
+
+        margin-top: -60px;
+        margin-left: 0;
+
+        svg {
+            width: 120px;
+            height: 120px;
+        }
+    }
+
+    .welcome__skill-btn {
+        width: auto;
+        margin-top: auto;
+    }
+    
+}
+
+@include var.desktop-size {
+
+    .welcome__video {
+        left: 44%;
+    }
+}

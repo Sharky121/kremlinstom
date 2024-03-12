@@ -1,0 +1,110 @@
+@use "../../abstract" as var;
+
+.feature {
+    position: relative;
+
+    padding: 80px 10px 10px;
+
+    border-radius: 10px;
+    border: 1px solid rgba(var.$brand-black, .05);
+
+    &::before {
+        content: '';
+
+        position: absolute;
+        left: 10px;
+        top: 10px;
+
+        display: block;
+        width: 60px;
+        height: 60px;
+
+        background-color: rgba(var.$brand-danger-200, 0.1);
+        border-radius: 50%;
+    }
+
+    &::after {
+        content: '';
+
+        position: absolute;
+        left: 10px;
+        top: 10px;
+
+        display: block;
+        width: 60px;
+        height: 60px;
+
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.feature--like::after {
+    background-image: url("/resources/frontend/images/ico-like.svg");
+    background-size: 30px 26px;
+}
+
+.feature--crown::after {
+    background-image: url("/resources/frontend/images/ico-crown.svg");
+    background-size: 30px 23px;
+}
+
+.feature--clock::after {
+    background-image: url("/resources/frontend/images/ico-clock.svg");
+    background-size: 30px 30px;
+}
+
+.feature--star::after {
+    background-image: url("/resources/frontend/images/ico-star.svg");
+    background-size: 30px 29px;
+}
+
+.feature--microscope::after {
+    background-image: url("/resources/frontend/images/ico-microscope.svg");
+    background-size: 29px 30px;
+}
+
+.feature--shield::after {
+    background-image: url("/resources/frontend/images/ico-shield.svg");
+    background-size: 29px 30px;
+}
+
+.feature--star-badge::after {
+    background-image: url("/resources/frontend/images/ico-star-badge.svg");
+    background-size: 29px 30px;
+}
+
+.feature__title {
+    margin: 0;
+
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+@include var.tablet-size {
+
+    .feature {
+        padding: 100px 20px 20px;
+
+        &::before {
+            left: 20px;
+            top: 20px;
+
+            width: 70px;
+            height: 70px;
+        }
+    
+        &::after {
+            left: 20px;
+            top: 20px;
+    
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+    .feature__title {
+        font-size: 20px;
+    }
+}

@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     min-width: 170px;
-    padding: 10px 15px;
+    padding: 10px 20px;
 
     color: var.$brand-danger-200;
 
@@ -66,5 +66,65 @@
 
         background-color: transparent;
         border-color: var.$brand-danger-200;
+    }
+}
+
+.btn--outline-danger {
+    color: var.$brand-danger-200;
+
+    border-color: var.$brand-danger-200;
+
+    &:hover,
+    &:active {
+        color: var.$brand-danger-200;
+
+        background-color: transparent;
+        border-color: var.$brand-danger-200;
+    }
+
+    &:focus {
+        outline: none;
+
+        color: var.$brand-danger-200;
+
+        background-color: transparent;
+        border-color: var.$brand-danger-200;
+    }
+}
+
+.btn--skill {
+    height: 48px;
+    justify-content: flex-start;
+
+    color: var.$brand-black;
+
+    background-color: var.$brand-grey-100;
+    border-color: var.$brand-grey-100;
+
+    &:hover,
+    &:active {
+        color: var.$brand-black;
+
+        background-color: transparent;
+        border-color: var.$brand-grey-100;
+    }
+
+    .btn__text {
+        font-weight: 400;
+        font-size: 16px;
+    }
+}
+
+@include var.tablet-size {
+
+    .btn--skill {
+        background-color: var.$brand-white;
+        border-color: var.$brand-white;
+    
+        &:hover,
+        &:active {
+            background-color: transparent;
+            border-color: var.$brand-white;
+        }
     }
 }

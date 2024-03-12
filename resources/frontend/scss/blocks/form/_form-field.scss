@@ -1,0 +1,51 @@
+@use "../../abstract" as var;
+
+.form-field {
+    position: relative;
+
+    line-height: 1;
+}
+
+.form-field__input {
+    width: 100%;
+    height: 40px;
+    padding: 9px 10px 8px 10px;
+
+    font-size: 14px;
+    color: var.$brand-grey-300;
+    font-weight: 400;
+
+    border-radius: 7px;
+    border: 1px solid var.$brand-grey-300;
+
+    cursor: pointer;
+    box-sizing: border-box;
+
+    &::placeholder {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    &:hover {
+        border-color: var.$brand-danger-200;
+    }
+    
+    &:focus {
+        border-color: var.$brand-danger-200;
+    }
+    
+    &:focus-visible {
+        outline: none;
+        border: 1px solid var.$brand-danger-200;
+    }
+}
+
+.form-field--search .form-field__input {
+    background-color: var.$brand-grey-100;
+
+    background-image: url("/resources/frontend/images/ico-search.svg");
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}

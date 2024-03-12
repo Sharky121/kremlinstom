@@ -1,4 +1,5 @@
 @use 'node_modules/modern-normalize/modern-normalize.css';
+@use 'node_modules/swiper/swiper-bundle.min.css';
 
 @use "fonts";
 @use "base";
@@ -14,3 +15,6 @@
 @use "./layout/header";
 @use "./layout/main";
 @use "./layout/footer";
+
+// Pages
+@use "./pages/index";

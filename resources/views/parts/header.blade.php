@@ -156,11 +156,16 @@ $menu = [
 
 <header class="{{$cssClass}} header" id="page-header">
     <div class="header__container container">
+        <!-- <div class="subheader">
+            <ul class="subheader__list">
+                <li class="subheader__item"></li>
+            </ul>
+        </div> -->
         <a class="header__logo logo" href="/">
             <img class="logo__img" src="/master/images/logo.svg" width="151" height="40" alt="Логотип Кремлевская стоматология">
         </a>
 
-        <nav class="mobile-menu">
+        <!-- <nav class="mobile-menu">
             <div class="mobile-menu__wrapper">
                 <form class="mobile-menu__search-form search-form" action="">
                     <div class="form-field form-field--search">
@@ -212,17 +217,29 @@ $menu = [
                     <p class="mobile-menu__schedule">с 8:00 — 20:00, без выходных</p>
                 </div>
             </div>
-        </nav>
+        </nav> -->
 
-        <!-- <nav class="header__nav main-nav">
+        <nav class="header__nav main-nav">
             <div class="main-nav__wrapper">
                 <ul class="main-nav__list">
                     <li class="main-nav__item">
                         <a class="main-nav__link" href="">Клиника</a>
                     </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="">Услуги</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="">Специалисты</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="">Пациентам</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="">Контакты</a>
+                    </li>
                 </ul>
             </div>
-        </nav> -->
+        </nav>
 
         <div class="header__callback header-callback">
             <div class="header-callback__wrapper">

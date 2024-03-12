@@ -1,0 +1,87 @@
+@use "../../abstract" as var;
+
+.reviews__slide {
+    width: 307px;
+    margin-right: 10px;
+}
+
+.reviews__header {
+    margin-bottom: 10px;
+}
+
+.reviews__title {
+    margin: 0;
+
+    font-size: 22px;
+}
+
+.reviews__more {
+    display: none;
+}
+
+@include var.tablet-size {
+
+    .reviews {
+        background-color: var.$brand-primary;
+    }
+
+    .reviews__container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .reviews__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .reviews__title {
+        font-size: 30px;
+    }
+
+    .reviews__more {
+        position: relative;
+
+        display: inline-block;
+        padding-right: 26px;
+
+        font-size: 16px;
+        font-weight: 700;
+        color: var.$brand-danger-200;
+        vertical-align: middle;
+
+        &::after {
+            content: '';
+
+            position: absolute;
+            right: 0;
+            top: 50%;
+
+            display: block;
+            width: 24px;
+            height: 24px;
+            margin-top: -10px;
+
+            background-image: url("/resources/frontend/images/ico-chevron-danger-right.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            transition-duration: 0.1s;
+            transition-property: transform;
+            transition-timing-function: ease-out;
+        }
+
+        &:hover::after {
+            transform: translateX(2px);
+
+            opacity: 0.7;
+        }
+    }
+
+    .reviews__slide {
+        width: 366px;
+        margin-right: 20px;
+    }
+}

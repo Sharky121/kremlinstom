@@ -1,0 +1,131 @@
+@use "../../abstract" as var;
+
+@keyframes hvr-icon-push {
+    50% {
+      transform: scale(0.9);
+    }
+}
+
+.review__title {
+    margin-top: 0;
+    margin-bottom: 2px;
+
+    font-size: 16px;
+}
+
+.review__subtitle {
+    margin: 0;
+}
+
+.review__link {
+    position: relative;
+
+    display: block;
+    width: 307px;
+    height: 173px;
+    margin-bottom: 10px;
+
+    overflow: hidden;
+    border-radius: 10px;
+
+    &::before {
+        content: '';
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        background-color: rgba(var.$brand-black, 0.4);
+
+        z-index: 1;
+    }
+
+    &::after {
+        content: '';
+
+        position: absolute;
+        left: 50%;
+        bottom: 50%;
+
+        display: block;
+        width: 51px;
+        height: 36px;
+        margin-left: -25.5px;
+        margin-bottom: -18px;
+
+        background-color: var.$brand-white;
+        background-image: url("/resources/frontend/images/youtube-button.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 12px;
+
+        z-index: 2;
+
+        transition-duration: 0.3s;
+        transition-property: transform;
+        transition-timing-function: ease-out;
+    }
+}
+
+.review__img {
+    object-fit: cover;
+
+    transition: all .5s;
+}
+
+.review__link:hover .review__img {
+    transform: scale(1.2);
+}
+
+.review__link:hover {
+
+    &::after {
+        transition-duration: 0.3s;
+        transition-property: transform;
+        transition-timing-function: ease-out;
+        
+        animation-name: hvr-icon-push;
+        animation-duration: 0.3s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+    }
+}
+
+@include var.tablet-size {
+
+    .review__link {
+        width: 366px;
+        height: 205px;
+        margin-bottom: 10px;
+
+        &::after {
+            left: 20px;
+            bottom: 20px;
+    
+            display: block;
+            width: 60px;
+            height: 42px;
+            margin-left: 0;
+            margin-bottom: 0;
+
+            border-radius: 14px;
+        }
+    }
+
+    .review__title {
+        font-size: 18px;
+    }
+
+    .review__subtitle {
+        font-size: 16px;
+    }
+
+    .review__img {
+        width: 100%;
+        height: auto;
+    }
+}

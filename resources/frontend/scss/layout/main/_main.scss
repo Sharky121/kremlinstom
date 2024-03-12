@@ -1,0 +1,30 @@
+@use "../../abstract" as var;
+
+.main__welcome {
+    margin-bottom: 10px;
+}
+
+.main__features {
+    margin-bottom: 10px;
+}
+
+.main__about {
+    margin-bottom: 20px;
+}
+
+.main__reviews {
+    margin-bottom: 20px;
+}
+
+@include var.tablet-size {
+
+    .main__reviews {
+        margin-bottom: 0;
+    }
+
+    .main__welcome,
+    .main__features,
+    .main__about {
+        margin-bottom: 50px;
+    }
+}

@@ -13,6 +13,7 @@
     height: 60px;
     width: 100%;
 
+    background-color: var.$brand-white;
     border-bottom: 1px solid var.$brand-grey-100;
 }
 
@@ -21,6 +22,10 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
+}
+
+.header__nav {
+    display: none;
 }
 
 .header__callback {
@@ -34,12 +39,21 @@
 
     backdrop-filter: blur(10px);
     animation: slideDown 0.35s ease-out;
+    z-index: 2;
 }
 
 @include var.desktop-size {
 
     .header {
         height: 80px;
+
+        border-bottom: none;
+        box-shadow: 0 2px 4px rgba(0, 0 ,0, 0.1);
+    }
+
+    .header__nav {
+        display: flex;
+        margin-left: auto;
     }
 
     .header__callback {

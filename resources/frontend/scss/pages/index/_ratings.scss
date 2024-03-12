@@ -1,0 +1,27 @@
+@use "../../abstract" as var;
+
+.ratings__wrapper {
+    padding: 1px;
+}
+
+.ratings__slide {
+    width: 149px;
+    margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+@include var.tablet-size {
+
+    .ratings__container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .ratings__slide {
+        width: 173px;
+        margin-right: 20px;
+    }
+}

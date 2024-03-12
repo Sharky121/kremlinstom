@@ -1,1 +1,19 @@
 @use "../../abstract" as var;
+
+.main-nav__list {
+    @extend %list-reset;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+}
+
+.main-nav__link {
+    color: var.$brand-black;
+    font-size: 16px;
+
+    &:hover {
+        color: var.$brand-danger-200;
+    }
+}
